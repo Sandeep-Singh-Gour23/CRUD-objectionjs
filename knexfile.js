@@ -1,12 +1,13 @@
    module.exports = {
     development: {
-    client: 'mysql',
+    client: 'pg',
      // Change these with your own database connection URL.
     connection: {
         host : '127.0.0.1',
-        user : 'root',
-        password : '',
-        database : 'test'
+        user : 'postgres',
+        password : 'postgres',
+        database : 'Sandeep',
+       port: '5433'
       },
       migrations: {
         directory: './src/migrations'     // Directory to migration files of the project.
